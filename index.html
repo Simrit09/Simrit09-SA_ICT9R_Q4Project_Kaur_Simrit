@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1">
+	<title>Log In</title>
+</head>
+<style>
+body{background-color: #ffe5b4;}
+.form-group{
+		width: 350px;
+		height: 435px;
+		border: groove;
+		margin-left: 40%;
+		margin-top: 13%;
+		background-color:#C8A2C8;
+		border-color: white;
+
+	
+</style>
+<body>
+	<h1 style="font-family:Times New Roman;margin-left:647px;font-size: 50px;color:darkmagenta;margin-bottom: -100px;">Welcome back!</h1>
+	 <form id="form">
+            <div class="form-group">
+            <div class="col">
+            	<img src="S.png" style="width:75px; margin-left:130px ;" class="rounded-circle">
+           
+            	<br>
+            	<br>
+            	<p style="font-family:Times new roman, serif; font-size: 17px; margin-left:100px; text-decoration:underline; font-weight: bold;">Username/Email:</p>
+                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" style="font-family: times new roman, serif; width: 300px; margin-left: 20px;">
+                </div>
+                <br>
+            <div class="col">
+            	<p style="font-family:Times new roman, serif; font-size: 17px; margin-left:125px; text-decoration:underline; font-weight: bold;"> Password:</p>
+                <input type="password" class="form-control" placeholder="Enter password" name="pswd" id="password" style="width: 300px; margin-left: 20px; font-family: times new roman, serif;" ><br>
+
+                <button type="submit" class="btn btn-light" style=" margin-left: 95px;">Login</button>
+                <button type="button" class="btn btn-light" style="margin-left: 10px;">Cancel</button>
+
+               	   <script>
+               	   		document.getElementById("form").addEventListener("submit", auth);
+
+        	    function auth(event) {
+        	    	event.preventDefault();
+
+             	   var email = document.getElementById("email").value;
+           	  	   var password = document.getElementById("password").value;
+              	  console.log(email);
+
+              	 	if (email === "dennisalimpolos@gmail.com" && password === "Dennis") {
+              	 			window.location.replace("Portfolio Page.html");}
+              	 		 if (email === "" && password ==="") {
+              	 				alert("Please enter information");}
+              	 				 else{
+              	 				return;}
+              	 			}
+              	 		
+       	 			</script>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
